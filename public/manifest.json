@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Eth Unit Converter",
+  "description": "An extension to easy convert between several eth units.",
+  "version": "0.0.1",
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "/images/extension_logo.png"
+  }
+}

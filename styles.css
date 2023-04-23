@@ -1,0 +1,94 @@
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("/fonts/JetBrainsMono-VariableFont_wght.ttf") format("truetype");
+  font-display: swap;
+}
+
+/* Modern reset: https://piccalil.li/blog/a-modern-css-reset/ */
+/*
+* RESET
+*/
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Prevent zooming when orientation changes on some iOS devices */
+html {
+  text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* CUSTOM */
+
+h2 {
+  line-height: 1em;
+  margin-bottom: 0.4em;
+}
+
+body {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 1.2rem;
+  padding: 2rem; /* FOR TESTING PURPOSES */
+}
+
+main {
+  width: 550px;
+  padding: 2rem;
+  outline: 1px solid #ccc; /* FOR TESTING PURPOSES */
+}
+
+.input {
+  width: 100%;
+}
+
+.inputs-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.inputs-container[data-error="true"] {
+  color: #d90429;
+}
+
+.input-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-container > label {
+  min-width: 8ch;
+}
